@@ -7,10 +7,10 @@
 <header>
     <div class="logo"></div>
     <nav>
-        <a href="/">Home</a>
-        <a href="/shop">Shop</a>
-        <a href="/contact">Contact</a>
-    </nav>
+        <a href="/project2/">Home</a>
+        <a href="/project2/shop">Shop</a>
+        <a href="/project2/contact">Contact</a>
+      </nav>
 </header>
   
 <main>
