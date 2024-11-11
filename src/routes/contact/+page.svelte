@@ -1,105 +1,125 @@
 <!-- src/Contact.svelte -->
 
 <script>
-    // Optional: add form submission logic here
-  </script>
-  
-  <header>
-    <div class="logo"></div>
-    <nav>
-      <a href="/project2/">Home</a>
-      <a href="/project2/shop">Shop</a>
-      <a href="/project2/contact">Contact</a>
-    </nav>
-  </header>
-  
-  <main>
-    <section class="contact">
+  // Optional: add form submission logic here
+</script>
+
+<header>
+  <div class="header-content">
+      <div class="logo">
+          <img src="/stlogo.png" alt="StudTechLogo">
+      </div>
+      <nav>
+          <a href="/project2/">Home</a>
+          <a href="/project2/shop">Shop</a>
+          <a href="/project2/contact">Contact</a>
+      </nav>
+  </div>
+</header>
+
+<main>
+  <section class="contact">
       <h1>Contact Us</h1>
       <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" required />
-  
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your Email" required />
-  
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="Your Phone Number" required />
-  
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-  
-        <div class="form-buttons">
-          <button type="button" class="cancel">Cancel</button>
-          <button type="submit" class="submit">Submit</button>
-        </div>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Your Phone Number" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+
+          <div class="form-buttons">
+              <button type="button" class="cancel">Cancel</button>
+              <button type="submit" class="submit">Submit</button>
+          </div>
       </form>
-    </section>
-  </main>
-  
-  <style>
-    :global(body) {
+  </section>
+</main>
+
+<style>
+  :global(body) {
       background-color: #333;
       color: #f1f1f1;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-    }
-  
-    header {
+  }
+
+  header {
+      background-color: rgba(26, 26, 26, 0.9);
+      padding: 1.5rem 3rem;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+  }
+
+  .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
-      background-color: #1a1a1a;
-    }
-  
-    .logo {
-      width: 100px;
-      height: 30px;
-      background-color: #e0e0e0;
-      border-radius: 5px;
-    }
-  
-    nav a {
-      color: white;
+  }
+
+  .logo {
+      display: flex;
+      width: 110px;
+      max-height: 60px;
+  }
+
+  .logo img {
+      width: 120%;
+      height: auto;
+      margin-top: -10px;
+  }
+
+  nav {
+      display: flex;
+      gap: 2rem;
+  }
+
+  nav a {
+      color: #e0e0e0;
       text-decoration: none;
-      font-weight: bold;
-      margin-left: 1.5rem;
-    }
-  
-    nav a:hover {
+      font-weight: 500;
+      transition: color 0.2s ease;
+  }
+
+  nav a:hover {
       text-decoration: underline;
-    }
-  
-    main {
+      color: #ffbf00;
+  }
+
+  main {
       display: flex;
       justify-content: center;
       padding: 2rem;
-    }
-  
-    .contact {
+  }
+
+  .contact {
       width: 100%;
       max-width: 600px;
       background-color: #444;
       border-radius: 8px;
       padding: 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  
-    .contact h1 {
+  }
+
+  .contact h1 {
       text-align: center;
       margin-bottom: 2rem;
-    }
-  
-    .contact-form label {
+  }
+
+  .contact-form label {
       display: block;
       margin-bottom: 0.5rem;
       font-weight: bold;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
+  }
+
+  .contact-form input,
+  .contact-form textarea {
       width: 100%;
       padding: 0.8rem;
       margin-bottom: 1.5rem;
@@ -108,46 +128,46 @@
       background-color: #555;
       color: #fff;
       font-size: 1rem;
-    }
-  
-    .contact-form input::placeholder,
-    .contact-form textarea::placeholder {
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
       color: #ddd;
-    }
-  
-    .contact-form textarea {
+  }
+
+  .contact-form textarea {
       resize: vertical;
       min-height: 100px;
-    }
-  
-    .form-buttons {
+  }
+
+  .form-buttons {
       display: flex;
       justify-content: space-between;
-    }
-  
-    .form-buttons .cancel,
-    .form-buttons .submit {
+  }
+
+  .form-buttons .cancel,
+  .form-buttons .submit {
       padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
       color: #fff;
-    }
-  
-    .form-buttons .cancel {
+  }
+
+  .form-buttons .cancel {
       background-color: #777;
-    }
-  
-    .form-buttons .submit {
+  }
+
+  .form-buttons .submit {
       background-color: #666;
-    }
-  
-    .form-buttons .cancel:hover {
+  }
+
+  .form-buttons .cancel:hover {
       background-color: #888;
-    }
-  
-    .form-buttons .submit:hover {
+  }
+
+  .form-buttons .submit:hover {
       background-color: #777;
-    }
-  </style>
+  }
+</style>
