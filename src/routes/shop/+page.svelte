@@ -22,9 +22,9 @@
     <header>
         <div class="logo"></div>
         <nav>
-            <a href="/project2/">Home</a>
-            <a href="/project2/shop">Shop</a>
-            <a href="/project2/contact">Contact</a>
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/contact">Contact</a>
         </nav>
     </header>
     
@@ -101,47 +101,30 @@
         }
     
         header {
-        background-color: rgba(26, 26, 26, 0.9);
-        padding: 1.5rem 3rem;
-        font-weight: 500;
-        letter-spacing: 0.6px;
-    }
-
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-      width: 100px;
-      height: 30px;
-      background-color: #e0e0e0;
-      border-radius: 5px;
-    }
-  
-
-    nav {
-        display: flex;
-        gap: 2rem;
-        margin-left:1450px;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        margin-left: 1.5rem;
-        transition: color 0.2s ease;
-        margin-top:-30px;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-        color: #ffbf00;
-    }
-
-
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #1a1a1a;
+        }
+    
+        .logo {
+            width: 100px;
+            height: 30px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+    
+        nav a:hover {
+            text-decoration: underline;
+        }
     
         main {
             display: flex;
