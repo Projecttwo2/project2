@@ -63,13 +63,16 @@
     nav {
         display: flex;
         gap: 2rem;
+        margin-left:1450px;
     }
 
     nav a {
-        color: #e0e0e0;
+        color: white;
         text-decoration: none;
         font-weight: 500;
+        margin-left: 1.5rem;
         transition: color 0.2s ease;
+        margin-top:-30px;
     }
 
     nav a:hover {

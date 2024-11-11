@@ -6,9 +6,7 @@
   
 <header>
     <div class="header-content">
-        <div class="logo">
-            <img src="/stlogo.png" alt="StudTechLogo">
-        </div>
+        <div class="logo"></div>
         <nav>
             <a href="/">Home</a>
             <a href="/shop">Shop</a>
@@ -50,12 +48,13 @@
         line-height: 1.7;
         letter-spacing: 0.02em;
     }
-
+   
     header {
-        background-color: rgba(26, 26, 26, 0.9);
-        padding: 1.5rem 3rem;
-        font-weight: 500;
-        letter-spacing: 0.6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #1a1a1a;
     }
 
     .header-content {
@@ -65,27 +64,26 @@
     }
 
     .logo {
-        display: flex;
-        width: 110px;
-        max-height: 60px;
+      width: 100px;
+      height: 30px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
     }
-
-    .logo img {
-        width: 120%;
-        height: auto;
-        margin-top: -10px;
-    }
+  
 
     nav {
         display: flex;
         gap: 2rem;
+        margin-left:1370px;
     }
 
     nav a {
-        color: #e0e0e0;
+        color: white;
         text-decoration: none;
         font-weight: 500;
+        margin-left: 1.5rem;
         transition: color 0.2s ease;
+        margin-top:8px;
     }
 
     nav a:hover {
