@@ -77,12 +77,14 @@
     nav a {
         color: white;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 500;
         margin-left: 1.5rem;
+        transition: color 0.2s ease;
     }
 
     nav a:hover {
         text-decoration: underline;
+        color: #ffbf00;
     }
 
     .content {
